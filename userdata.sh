@@ -30,7 +30,7 @@ dpkg -i puppet.deb
 apt-get update
 if [ `echo $puppetmaster_name | grep -c "[a-z0-9][a-z0-9]*"` -eq 0 ]; then
   apt-get install -y puppetmaster
-  sudo puppet module install fsalum-puppetmaster
+   puppet module install fsalum-puppetmaster
   cat <<EOF > /etc/puppet/manifests/puppetmaster.pp
 #package { 'puppetmaster-passenger': 
 #  ensure => installed, 
@@ -51,8 +51,8 @@ else
     exit 1
   fi
   apt-get install -y puppet
-  sudo puppet module install puppetlabs-stdlib
-  sudo puppet module install puppetlabs-inifile
+   puppet module install puppetlabs-stdlib
+   puppet module install puppetlabs-inifile
   cat <<EOF > /etc/puppet/manifests/puppetagent.pp
 host {'$puppetmaster_name':
   ip => '$puppetmaster_ip'

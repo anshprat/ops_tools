@@ -14,8 +14,8 @@
 
 release="$(lsb_release -cs)"
 proxy=''
-puppetmaster_name='puppetmaster1.domain.name'
-puppetmaster_ip='10.22.3.50'
+puppetmaster_name=''
+puppetmaster_ip=''
 
 if [ `echo $proxy | grep -c "[a-z0-9][a-z0-9]*"` -ne 0 ]; then
   export http_proxy=$proxy

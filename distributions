@@ -1,0 +1,38 @@
+Origin: JioCloud
+Label: JioCloud
+Suite: precise
+Codename: precise
+Architectures: source i386 amd64
+Description: JioCloud Production Archive
+Components: main
+Update: ubuntu-havana-precise
+SignWith: 85596F7A
+
+Origin: JioCloud
+Label: JioCloud
+Suite: trusty-unstable
+Codename: trusty-unstable
+Architectures: source i386 amd64
+Description: JioCloud Unstable Archive
+Components: main
+SignWith: 85596F7A
+
+Origin: JioCloud
+Label: JioCloud
+Suite: trusty-testing
+Codename: trusty-testing
+Architectures: source i386 amd64
+Description: JioCloud Testing Archive
+Components: main
+SignWith: 85596F7A
+Pull: from-unstable
+
+Origin: JioCloud
+Label: JioCloud
+Suite: trusty
+Codename: trusty
+Architectures: source i386 amd64
+Description: JioCloud Production Archive
+Components: main
+SignWith: 85596F7A
+Pull: from-testing
